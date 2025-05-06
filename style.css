@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(hero3.webp);
+    overflow-x: fixed;
+    background-size: fixed;  
+    background-position: center center;  
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: grey;
+    color: #fff;
+    backdrop-filter: blur(20px);
+
+
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(76, 3, 3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav ul li a {
+    color: rgb(14, 14, 6);
+    text-decoration: none;
+}
+
+
+
+.hero {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero-content{
+
+    background: rgba(73, 28, 28, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+.hero h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.btn{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ff4500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+    color: #fff;
+    margin-top: 300px;
+    backdrop-filter: blur(20px);
+    
+}
+.footer-content {
+    display: flex;                   /* Use flexbox to organize footer items */
+    justify-content: space-between;   /* Space between social media and contact sections */
+    align-items: center;             /* Vertically center content */
+    max-width: 1200px;               /* Limit max width */
+    margin: 0 auto;                  /* Center the content within the footer */
+  }
+  
+  /* Social Media Icons Styling */
+  .social-media a {
+    margin: 0 10px;                  /* Spacing between icons */
+  }
+  
+  .social-icon {
+    width: 30px;                     /* Size of the social media icons */
+    height: 30px;
+    transition: transform 0.3s ease;  /* Smooth transition on hover */
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);           /* Slightly increase size on hover */
+  }
+  
+ 
+  .contact-info p {
+    margin: 5px 0;                   
+  }

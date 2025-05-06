@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(hero3.webp);
+    background-size: cover;   
+    background-position: center center;  
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: grey;
+    color: #fff;
+    
+
+
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color:rgb(76, 3, 3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav ul li a {
+    color: rgb(15, 13, 13);
+    text-decoration: none;
+}
+
+
+
+.hero {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero-content{
+
+    background: rgba(73, 28, 28, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+.hero h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.btn{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ff4500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: transparent;
+    color: #fff;
+    margin-top: 600px;
+    backdrop-filter: blur(20px);
+    
+}
+.footer-content {
+    display: flex;                   /* Use flexbox to organize footer items */
+    justify-content: space-between;   /* Space between social media and contact sections */
+    align-items: center;             /* Vertically center content */
+    max-width: 1200px;               /* Limit max width */
+    margin: 0 auto;                  /* Center the content within the footer */
+  }
+  
+  /* Social Media Icons Styling */
+  .social-media a {
+    margin: 0 10px;                  /* Spacing between icons */
+  }
+  
+  .social-icon {
+    width: 30px;                     /* Size of the social media icons */
+    height: 30px;
+    transition: transform 0.3s ease;  /* Smooth transition on hover */
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);           /* Slightly increase size on hover */
+  }
+  
+ 
+  .contact-info p {
+    margin: 5px 0;                   
+  }
+  /* General Styling for News Section */
+.news {
+    background-color: #fff;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+    margin-top: 300px;
+  }
+  
+  .news .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .news h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .news p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  
+  .news-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .news-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .news-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .news-content {
+    padding: 20px;
+  }
+  
+  .news-item h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .news-item .news-date {
+    font-size: 1.1em;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .news-item .news-excerpt {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .news-item .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #FF5733;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .news-item .btn:hover {
+    background-color: #C70039;
+  }
+  

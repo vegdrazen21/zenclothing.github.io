@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(hero3.webp);
+    background-size: fixed;   
+    background-position: fixed;  
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: grey;
+    color: #fff;
+    
+
+
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(76, 3, 3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav ul li a {
+    color: rgb(15, 13, 13);
+    text-decoration: none;
+}
+
+
+
+.hero {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero-content{
+
+    background: rgba(73, 28, 28, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+.hero h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.btn{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ff4500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: transparent;
+    color: #fff;
+    margin-top: 600px;
+    backdrop-filter: blur(20px);
+    
+}
+.footer-content {
+    display: flex;                   /* Use flexbox to organize footer items */
+    justify-content: space-between;   /* Space between social media and contact sections */
+    align-items: center;             /* Vertically center content */
+    max-width: 1200px;               /* Limit max width */
+    margin: 0 auto;                  /* Center the content within the footer */
+  }
+  
+  /* Social Media Icons Styling */
+  .social-media a {
+    margin: 0 10px;                  /* Spacing between icons */
+  }
+  
+  .social-icon {
+    width: 30px;                     /* Size of the social media icons */
+    height: 30px;
+    transition: transform 0.3s ease;  /* Smooth transition on hover */
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);           /* Slightly increase size on hover */
+  }
+  
+ 
+  .contact-info p {
+    margin: 5px 0;                   
+  }
+  /* General Styling for Log In Section */
+.login {
+    background-color: transparent;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+    margin-top: 120px;
+  }
+  
+  .login .container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .login p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #333;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .form-group input:focus {
+    border-color: #FF5733;
+    outline: none;
+  }
+  
+  .form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .btn {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #FF5733;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #C70039;
+  }
+  
+  .signup-link {
+    margin-top: 20px;
+    font-size: 1em;
+  }
+  
+  .signup-link a {
+    color: #FF5733;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .forgot-password-link {
+    margin-top: 10px;
+    font-size: 1em;
+  }
+  
+  .forgot-password-link a {
+    color: #FF5733;
+    text-decoration: none;
+  }
+  
+  .forgot-password-link a:hover {
+    text-decoration: underline;
+  
+  }
+  
+  .back-btn {
+    background-color: #777;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .back-btn:hover {
+    background-color: #555;
+  }
+  

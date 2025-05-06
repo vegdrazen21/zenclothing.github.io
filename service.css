@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: url(nimbus1.JPEG);
+    background-size: fixed;   /* Makes the image cover the entire viewport */
+    background-position: fixed;  /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: grey;
+    color: #fff;
+   
+
+    
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(76, 3, 3);
+}
+
+nav ul {  
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav ul li a {
+   color: rgb(14, 14, 6);
+   text-decoration: none;
+}
+
+/* General Styling for Products Section */
+
+
+
+.products {
+    
+    background-color: #fff;
+    padding: 20px 30;
+    font-family: 'Arial', sans-serif;
+    margin-top: 100px;
+    
+  }
+  
+  .products .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .products h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .products p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin: 20px 0;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .product-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 15px;
+  }
+  
+  .product-item .product-description {
+    font-size: 1em;
+    color: #777;
+    margin: 10px 0;
+  }
+  
+  .product-item .price {
+    font-size: 1.3em;
+    color: #FF5733;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .product-item .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #FF5733;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-item .btn:hover {
+    background-color: #C70039;
+  }
+  
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+    color: #fff;
+    margin-top: 300px;
+    backdrop-filter: blur(20px);
+    
+}
+.footer-content {
+    display: flex;                   /* Use flexbox to organize footer items */
+    justify-content: space-between;   /* Space between social media and contact sections */
+    align-items: center;             /* Vertically center content */
+    max-width: 1200px;               /* Limit max width */
+    margin: 0 auto;                  /* Center the content within the footer */
+  }
+  
+  /* Social Media Icons Styling */
+  .social-media a {
+    margin: 0 10px;                  /* Spacing between icons */
+  }
+  
+  .social-icon {
+    width: 30px;                     /* Size of the social media icons */
+    height: 30px;
+    transition: transform 0.3s ease;  /* Smooth transition on hover */
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);           /* Slightly increase size on hover */
+  }
+  
+ 
+  .contact-info p {
+    margin: 5px 0;                   
+  }
