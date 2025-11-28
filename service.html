@@ -110,5 +110,51 @@
   s0.parentNode.insertBefore(s1,s0);
   })();
   </script>
-  <!--End of Tawk.to Script-->
+<!--End of Tawk.to Script-->
+<button onclick="addAnimeShirt()">Buy Anime T-Shirt</button>
+
+<script>
+function addAnimeShirt() {
+  const item = {
+    id: "anime-ts-001",
+    name: "Anime Graphic T-Shirt",
+    price: 499,
+    quantity: 1
+  };
+
+  localStorage.setItem("cart", JSON.stringify([item]));
+  window.location.href = "checkout.html"; // your checkout page
+}
+</script>
+async function processCheckout() {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const checkoutBody = {
+    cartItems: cart,
+    shipping_method: "standard",
+    shipping_cost: 80,
+    discount: 0,
+    customer: {
+      name: document.querySelector("#name").value,
+      email: document.querySelector("#email").value
+    },
+    payment_method: "cod"
+  };
+
+  const res = await fetch("https://api.yoursite.com/api/checkout", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify(checkoutBody)
+  });
+
+  const data = await res.json();
+  if(res.ok) {
+    window.location.href = "success.html";
+  } else {
+    window.location.href = "error.html";
+  }
+}
+
+
 </html>
+
